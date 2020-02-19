@@ -1,4 +1,6 @@
-# TIG stack on hypriot (Raspbi 3)
+# UOC Programacio Avançada per ciencia de dades 
+# ATENCIO: Contenidor no oficial. La UOC no suporta aquest contenidor.
+
 version: "3.2"
 
 services:
@@ -7,9 +9,8 @@ services:
    build:
     context: .
     dockerfile: ./uoc-scripts/Dockerfile
-   command: jupyter --no-browser --ip=0.0.0.0 --port=8888 --notebook-dir=/home/datasci/PEC/ --password=datasci
+   command: jupyter-notebook --no-browser --ip="0.0.0.0" --port=8888 --notebook-dir=/home/datasci/ --NotebookApp.token='' --NotebookApp.password=''
    volumes:
     - ./:/home/datasci/
-   ports:
-    - "8888:8888"
+   network_mode: host
    restart: on-failure
