@@ -1,0 +1,15 @@
+# TIG stack on hypriot (Raspbi 3)
+version: "3.2"
+
+services:
+ datasci:
+   container_name: UOC_AdvPython
+   build:
+    context: .
+    dockerfile: ./uoc-scripts/Dockerfile
+   command: jupyter --no-browser --ip=0.0.0.0 --port=8888 --notebook-dir=/home/datasci/PEC/ --password=datasci
+   volumes:
+    - ./:/home/datasci/
+   ports:
+    - "8888:8888"
+   restart: on-failure
