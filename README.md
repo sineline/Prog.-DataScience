@@ -25,7 +25,7 @@ Un cop executa la maquina, es pot accedir a jupter a traves d'aques enllaç. Els
 1. Obre un nou terminal des de jupyter-notebook (New > Terminal) i escriu get_pec.sh
 
 ## Instal·lacio de nous paquets per python
-1. Obre el terminal i executa "docker-compose run UOC_AdvPython python3 -m pip install <<nom del paquet>>"
+1. Obre el terminal i executa "docker-compose run UOC_AdvPython python3 -m pip install ***nom del paquet***"
 
 ## Accedir a la maquina per consola
 1. Obre el terminal i executa "docker-compose run UOC_AdvPython sh"
