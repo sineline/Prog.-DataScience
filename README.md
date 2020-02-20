@@ -1,17 +1,19 @@
 # Prog.-DataScience
 Repositori amb docker file imitant VM assignatura UOC Programacio per a la ciencia de dades
 
-S'ha intentat mantenir les mateixes versions que a la VM pero en alguns casos no ha estat possibe.
-Aixi mateix, la imatge no inclou els arxius de la carpeta "geoplotlib_tiles/positron". Pot mirar de ser inclos mes endavant.
+### Avisos
+- S'ha intentat mantenir les mateixes versions que a la VM pero en alguns casos no ha estat possibe.
+- El contenidor no inclou els arxius de la carpeta "geoplotlib_tiles/positron". Pot mirar de ser inclos mes endavant.
+- La carpeta home del usuari datasci esta mapejada a la carpeta arrel on es descarreguin els arxius d'aquest repositori. Aixi doncs, les PECs descarregades amb l'script de la uoc (get_pec.sh) seran desats a la carpeta PEC/ del repositori. 
 
 
 ## Posada en marxa
 
 1. Instal·lar [docker](https://docs.docker.com/install/)
 2. Obrir un terminal a la carpeta on es vulgui desar els arxius del curs.
-3. Executar des del terminal: *git clone https://github.com/sineline/Prog.-DataScience.git Prog_DS*
-4. Introduir la comanda *cd Prog_DS*
-2. Executar la comanda *docker-compose up -d* (sense -d per debug)
+3. Executar des del terminal: ***git clone https://github.com/sineline/Prog.-DataScience.git Prog_DS***
+4. Introduir la comanda ***cd Prog_DS***
+2. Executar la comanda ***docker-compose up -d** (sense -d per debug)
 
 # Utilitzacio
 
@@ -23,16 +25,16 @@ Un cop creada la maquina, els notebooks seran desats per defecte a la carpeta /P
 ## Descarrega de noves PECs (Un cop el contenidor ja ha estat creat)
 #### Opcio 1:
 1. Obre el terminal a la ubicacio dels arxius descarregats.
-2. Executa la comanda *docker-compose run UOC_AdvPython get_pec.sh*
+2. Executa la comanda ***docker-compose run UOC_AdvPython get_pec.sh***
 
 #### Opcio 2:
 1. Obre un nou terminal des de jupyter-notebook (New > Terminal)
-2. Executa la comanda *get_pec.sh*
+2. Executa la comanda ***get_pec.sh***
 
 ## Instal·lacio de nous paquets per python
 1. Obre el terminal
-2. Executa *docker-compose run UOC_AdvPython python3 -m pip install **nom del paquet***
+2. Executa ***docker-compose run UOC_AdvPython python3 -m pip install nom_del_paquet***
 
 ## Accedir a la maquina per consola
 1. Obre el terminal a la ubicacio dels arxius del curs.
-2. Executa la comanda *docker-compose run UOC_AdvPython sh*
+2. Executa la comanda ***docker-compose run UOC_AdvPython sh***
