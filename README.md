@@ -8,7 +8,10 @@ Aixi mateix, la imatge no inclou els arxius de la carpeta "geoplotlib_tiles/posi
 ## Posada en marxa
 
 1. Instal·lar [docker](https://docs.docker.com/install/)
-2. Executar docker-compose up -d (sense -d per debug)
+2. Obrir un terminal a la carpeta on es vulgui desar els arxius del curs.
+3. Executar des del terminal: *git clone https://github.com/sineline/Prog.-DataScience.git Prog_DS*
+4. Introduir la comanda *cd Prog_DS*
+2. Executar la comanda *docker-compose up -d* (sense -d per debug)
 
 # Utilitzacio
 
@@ -19,13 +22,17 @@ Un cop creada la maquina, els notebooks seran desats per defecte a la carpeta /P
 
 ## Descarrega de noves PECs (Un cop el contenidor ja ha estat creat)
 #### Opcio 1:
-1. Obre el terminal del teu ordinador i executa "docker-compose run UOC_AdvPython get_pec.sh" 
+1. Obre el terminal a la ubicacio dels arxius descarregats.
+2. Executa la comanda *docker-compose run UOC_AdvPython get_pec.sh*
 
 #### Opcio 2:
-1. Obre un nou terminal des de jupyter-notebook (New > Terminal) i escriu get_pec.sh
+1. Obre un nou terminal des de jupyter-notebook (New > Terminal)
+2. Executa la comanda *get_pec.sh*
 
 ## Instal·lacio de nous paquets per python
-1. Obre el terminal i executa "docker-compose run UOC_AdvPython python3 -m pip install ***nom del paquet***"
+1. Obre el terminal
+2. Executa *docker-compose run UOC_AdvPython python3 -m pip install **nom del paquet***
 
 ## Accedir a la maquina per consola
-1. Obre el terminal i executa "docker-compose run UOC_AdvPython sh"
+1. Obre el terminal a la ubicacio dels arxius del curs.
+2. Executa la comanda *docker-compose run UOC_AdvPython sh*
