@@ -28,4 +28,4 @@ Un cop executa la maquina, es pot accedir a jupter a traves d'aques enllaç. Els
 1. Obre el terminal i executa "docker-compose run UOC_AdvPython python3 -m pip install **<<nom del paquet>>**"
 
 ## Accedir a la maquina per consola
-1. Obre el terminal i executa "docker-compose run UOC_AdvPython bash"
+1. Obre el terminal i executa "docker-compose run UOC_AdvPython sh"
