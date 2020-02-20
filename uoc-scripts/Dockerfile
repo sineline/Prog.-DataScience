@@ -9,16 +9,17 @@ ENV PYTHONFAULTHANDLER=1 \
     PIP_DEFAULT_TIMEOUT=100 \
     PEC_PATH=/home/datasci/
 
-# UOC PEC scripts
-COPY ./uoc-scripts/*.sh /usr/bin/
+COPY ./uoc-scripts/get_pec.sh ./uoc-scripts/get_sol_pec.sh /usr/bin/
+RUN chmod +x /usr/bin/get_pec.sh /usr/bin/get_sol_pec.sh
+
 
 # python dependencies
-COPY ./uoc-scripts/*.txt /
+COPY ./uoc-scripts/paquets.txt /
 
-RUN pip3 install -r paquets.txt
+RUN python -m pip install -r paquets.txt
 
-RUN useradd -ms /bin/bash datasci
-
+RUN useradd -ms /bin/sh datasci
+RUN usermod -aG sudo datasci
 USER datasci
 
 WORKDIR /home/datasci
