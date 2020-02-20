@@ -15,7 +15,7 @@ Aixi mateix, la imatge no inclou els arxius de la carpeta "geoplotlib_tiles/posi
 Un cop executada la maquina, es pot accedir a aquesta a traves de http://localhost:8888/
 En cas de problemes accedint a localhost, [mirar aquest enllaç](https://stackoverflow.com/questions/7580508/getting-chrome-to-accept-self-signed-localhost-certificate)
 
-Un cop executa la maquina, es pot accedir a jupter a traves d'aques enllaç. Els notebooks seran desats per defecte a la carpeta /PEC/ de la ruta on es troba l'arxiu docker-compose.yml i on s'ha executat la comanda d'arrancada.
+Un cop creada la maquina, els notebooks seran desats per defecte a la carpeta /PEC/ de la ruta on es troba l'arxiu docker-compose.yml, des d'on s'ha executat la comanda d'arrancada.
 
 ## Descarrega de noves PECs (la imatge ha d'existir en el sistema 
 ### Opcio 1:
