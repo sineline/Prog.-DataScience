@@ -1,4 +1,4 @@
-# Prog.-DataScience
+# Contenidor no oficial per a la assignatura 22.403 - Programació per a la ciència de dades
 Repositori amb docker file imitant VM assignatura UOC Programacio per a la ciencia de dades
 
 ### Avisos
