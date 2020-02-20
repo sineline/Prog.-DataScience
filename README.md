@@ -13,7 +13,7 @@ Repositori amb docker file imitant VM assignatura UOC Programacio per a la cienc
 2. Obrir un terminal a la carpeta on es vulgui desar els arxius del curs.
 3. Executar des del terminal: ***git clone https://github.com/sineline/Prog.-DataScience.git Prog_DS***
 4. Introduir la comanda ***cd Prog_DS***
-2. Executar la comanda ***docker-compose up -d** (sense -d per debug)
+2. Executar la comanda ***docker-compose up -d** (sense -d per debug)*
 
 # Utilitzacio
 
