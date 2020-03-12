@@ -1,4 +1,5 @@
 PEC/*
 .DS_Store
-.local
-.jupyter
+.local/
+.jupyter/
+.ipython/
