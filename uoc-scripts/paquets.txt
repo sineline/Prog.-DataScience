@@ -126,3 +126,4 @@ webencodings
 widgetsnbextension
 xcffib
 zope.interface
+pycodestyle_magic
