@@ -1,4 +1,8 @@
-FROM python:3.6
+FROM xubuntu:18:04
+
+RUN apt-get update && apt-get upgrade
+RUN apt-get autoremove libreoffice-calc libreoffice-writer libreoffice-core libreoffice-math pidgin thunderbird transmission-common transmission-gtk
+RUN apt-get install git curl geany terminator python3-pip python3-dev
 
 # python envs
 ENV PYTHONFAULTHANDLER=1 \
@@ -9,9 +13,8 @@ ENV PYTHONFAULTHANDLER=1 \
     PIP_DEFAULT_TIMEOUT=100 \
     PEC_PATH=/home/datasci/
 
-COPY ./uoc-scripts/get_pec.sh ./uoc-scripts/get_sol_pec.sh /usr/bin/
-RUN chmod +x /usr/bin/get_pec.sh /usr/bin/get_sol_pec.sh
-
+COPY ./uoc-scripts/*.sh /usr/bin/
+RUN chmod +x /usr/bin/get_content.sh
 
 # python dependencies
 COPY ./uoc-scripts/paquets.txt /
