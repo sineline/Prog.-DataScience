@@ -25,7 +25,7 @@ Un cop creada la maquina, els notebooks seran desats per defecte a la carpeta /P
 
 #### Opcio 2:
 1. Obre un nou terminal des de jupyter-notebook (New > Terminal)
-2. Executa la comanda ***get_pec.sh***
+2. Executa la comanda ***get_content.sh***
 
 ## Instal·lacio de nous paquets per python
 1. Obre el terminal
