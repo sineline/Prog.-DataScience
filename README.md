@@ -21,7 +21,7 @@ Un cop creada la maquina, els notebooks seran desats per defecte a la carpeta /P
 ## Descarrega de noves PECs (Un cop el contenidor ja ha estat creat)
 #### Opcio 1:
 1. Obre el terminal a la ubicacio dels arxius descarregats.
-2. Executa la comanda ***docker-compose run UOC_AdvPython get_pec.sh***
+2. Executa la comanda ***docker-compose run UOC_AdvPython get_content.sh***
 
 #### Opcio 2:
 1. Obre un nou terminal des de jupyter-notebook (New > Terminal)
